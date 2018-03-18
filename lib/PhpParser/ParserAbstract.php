@@ -1,25 +1,25 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
 /*
  * This parser is based on a skeleton written by Moriyoshi Koizumi, which in
  * turn is based on work by Masato Bito.
  */
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\Param;
-use PhpParser\Node\Scalar\LNumber;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\ClassConst;
-use PhpParser\Node\Stmt\ClassMethod;
-use PhpParser\Node\Stmt\Interface_;
-use PhpParser\Node\Stmt\Namespace_;
-use PhpParser\Node\Stmt\Property;
-use PhpParser\Node\Stmt\TryCatch;
-use PhpParser\Node\Stmt\UseUse;
-use PhpParser\Node\VarLikeIdentifier;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\Param;
+use PhpParser\V4\Node\Scalar\LNumber;
+use PhpParser\V4\Node\Scalar\String_;
+use PhpParser\V4\Node\Stmt\Class_;
+use PhpParser\V4\Node\Stmt\ClassConst;
+use PhpParser\V4\Node\Stmt\ClassMethod;
+use PhpParser\V4\Node\Stmt\Interface_;
+use PhpParser\V4\Node\Stmt\Namespace_;
+use PhpParser\V4\Node\Stmt\Property;
+use PhpParser\V4\Node\Stmt\TryCatch;
+use PhpParser\V4\Node\Stmt\UseUse;
+use PhpParser\V4\Node\VarLikeIdentifier;
 
 abstract class ParserAbstract implements Parser
 {

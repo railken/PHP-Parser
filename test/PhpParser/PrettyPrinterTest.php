@@ -1,16 +1,16 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Name;
-use PhpParser\Node\Scalar\DNumber;
-use PhpParser\Node\Scalar\Encapsed;
-use PhpParser\Node\Scalar\EncapsedStringPart;
-use PhpParser\Node\Scalar\LNumber;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt;
-use PhpParser\PrettyPrinter\Standard;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\Scalar\DNumber;
+use PhpParser\V4\Node\Scalar\Encapsed;
+use PhpParser\V4\Node\Scalar\EncapsedStringPart;
+use PhpParser\V4\Node\Scalar\LNumber;
+use PhpParser\V4\Node\Scalar\String_;
+use PhpParser\V4\Node\Stmt;
+use PhpParser\V4\PrettyPrinter\Standard;
 
 require_once __DIR__ . '/CodeTestAbstract.php';
 
@@ -56,7 +56,7 @@ class PrettyPrinterTest extends CodeTestAbstract
 
     /**
      * @dataProvider provideTestPrettyPrint
-     * @covers \PhpParser\PrettyPrinter\Standard<extended>
+     * @covers \PhpParser\V4\PrettyPrinter\Standard<extended>
      */
     public function testPrettyPrint($name, $code, $expected, $mode) {
         $this->doTestPrettyPrintMethod('prettyPrint', $name, $code, $expected, $mode);
@@ -64,7 +64,7 @@ class PrettyPrinterTest extends CodeTestAbstract
 
     /**
      * @dataProvider provideTestPrettyPrintFile
-     * @covers \PhpParser\PrettyPrinter\Standard<extended>
+     * @covers \PhpParser\V4\PrettyPrinter\Standard<extended>
      */
     public function testPrettyPrintFile($name, $code, $expected, $mode) {
         $this->doTestPrettyPrintMethod('prettyPrintFile', $name, $code, $expected, $mode);
@@ -210,7 +210,7 @@ class PrettyPrinterTest extends CodeTestAbstract
 
     /**
      * @dataProvider provideTestFormatPreservingPrint
-     * @covers \PhpParser\PrettyPrinter\Standard<extended>
+     * @covers \PhpParser\V4\PrettyPrinter\Standard<extended>
      */
     public function testFormatPreservingPrint($name, $code, $modification, $expected, $modeLine) {
         $lexer = new Lexer\Emulative([
@@ -234,11 +234,11 @@ class PrettyPrinterTest extends CodeTestAbstract
 
         /** @var callable $fn */
         eval(<<<CODE
-use PhpParser\Comment;
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Comment;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Scalar;
+use PhpParser\V4\Node\Stmt;
 \$fn = function(&\$stmts) { $modification };
 CODE
         );
@@ -254,7 +254,7 @@ CODE
 
     /**
      * @dataProvider provideTestRoundTripPrint
-     * @covers \PhpParser\PrettyPrinter\Standard<extended>
+     * @covers \PhpParser\V4\PrettyPrinter\Standard<extended>
      */
     public function testRoundTripPrint($name, $code, $expected, $modeLine) {
         /**

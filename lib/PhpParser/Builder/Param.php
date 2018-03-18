@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
+use PhpParser\V4;
+use PhpParser\V4\BuilderHelpers;
+use PhpParser\V4\Node;
 
-class Param implements PhpParser\Builder
+class Param implements \PhpParser\V4\Builder
 {
     protected $name;
 

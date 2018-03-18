@@ -1,12 +1,12 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Expr\Include_;
-use PhpParser\Node\Stmt\Class_;
-use PhpParser\Node\Stmt\GroupUse;
-use PhpParser\Node\Stmt\Use_;
-use PhpParser\Node\Stmt\UseUse;
+use PhpParser\V4\Node\Expr\Include_;
+use PhpParser\V4\Node\Stmt\Class_;
+use PhpParser\V4\Node\Stmt\GroupUse;
+use PhpParser\V4\Node\Stmt\Use_;
+use PhpParser\V4\Node\Stmt\UseUse;
 
 class NodeDumper
 {

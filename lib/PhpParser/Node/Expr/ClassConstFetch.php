@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParser\V4\Node\Expr;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Identifier;
+use PhpParser\V4\Node\Name;
 
 class ClassConstFetch extends Expr
 {

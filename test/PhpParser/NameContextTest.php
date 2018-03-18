@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Name;
-use PhpParser\Node\Stmt\Use_;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\Stmt\Use_;
 use PHPUnit\Framework\TestCase;
 
 class NameContextTest extends TestCase

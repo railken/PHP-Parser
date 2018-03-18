@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Parser;
+namespace PhpParser\V4\Parser;
 
-use PhpParser\Lexer;
-use PhpParser\ParserTest;
+use PhpParser\V4\Lexer;
+use PhpParser\V4\ParserTest;
 
 require_once __DIR__ . '/../ParserTest.php';
 

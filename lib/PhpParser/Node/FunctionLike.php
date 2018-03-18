@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node;
+namespace PhpParser\V4\Node;
 
-use PhpParser\Node;
+use PhpParser\V4\Node;
 
 interface FunctionLike extends Node
 {

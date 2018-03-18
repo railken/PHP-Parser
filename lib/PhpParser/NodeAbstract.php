@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node;
+use PhpParser\V4\Node;
 
 abstract class NodeAbstract implements Node, \JsonSerializable
 {

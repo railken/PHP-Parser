@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr\AssignOp;
+namespace PhpParser\V4\Node\Expr\AssignOp;
 
-use PhpParser\Node\Expr\AssignOp;
+use PhpParser\V4\Node\Expr\AssignOp;
 
 class ShiftLeft extends AssignOp
 {

@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\ErrorHandler;
+namespace PhpParser\V4\ErrorHandler;
 
-use PhpParser\Error;
+use PhpParser\V4\Error;
 use PHPUnit\Framework\TestCase;
 
 class CollectingTest extends TestCase

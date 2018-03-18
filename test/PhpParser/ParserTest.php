@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Scalar;
+use PhpParser\V4\Node\Scalar\String_;
+use PhpParser\V4\Node\Stmt;
 use PHPUnit\Framework\TestCase;
 
 abstract class ParserTest extends TestCase
@@ -14,7 +14,7 @@ abstract class ParserTest extends TestCase
     abstract protected function getParser(Lexer $lexer);
 
     /**
-     * @expectedException \PhpParser\Error
+     * @expectedException \PhpParser\V4\Error
      * @expectedExceptionMessage Syntax error, unexpected EOF on line 1
      */
     public function testParserThrowsSyntaxError() {
@@ -23,7 +23,7 @@ abstract class ParserTest extends TestCase
     }
 
     /**
-     * @expectedException \PhpParser\Error
+     * @expectedException \PhpParser\V4\Error
      * @expectedExceptionMessage Cannot use foo as self because 'self' is a special class name on line 1
      */
     public function testParserThrowsSpecialError() {
@@ -32,7 +32,7 @@ abstract class ParserTest extends TestCase
     }
 
     /**
-     * @expectedException \PhpParser\Error
+     * @expectedException \PhpParser\V4\Error
      * @expectedExceptionMessage Unterminated comment on line 1
      */
     public function testParserThrowsLexerError() {

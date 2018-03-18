@@ -1,5 +1,5 @@
 {
-    "name": "nikic/php-parser",
+    "name": "railken/nikic-php-parser-v4",
     "description": "A PHP parser written in PHP",
     "keywords": ["php", "parser"],
     "type": "library",
@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "PhpParser\\": "lib/PhpParser"
+            "PhpParser\\V4\\": "lib/PhpParser"
         }
     },
     "bin": ["bin/php-parse"],

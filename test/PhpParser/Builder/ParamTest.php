@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Scalar;
 use PHPUnit\Framework\TestCase;
 
 class ParamTest extends TestCase

@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParser\V4\Node\Stmt;
 
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Node\Identifier;
+use PhpParser\V4\Node\Stmt;
 
 class Goto_ extends Stmt
 {

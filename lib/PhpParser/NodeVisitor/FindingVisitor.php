@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\NodeVisitor;
+namespace PhpParser\V4\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\NodeVisitorAbstract;
+use PhpParser\V4\Node;
+use PhpParser\V4\NodeVisitorAbstract;
 
 /**
  * This visitor can be used to find and collect all nodes satisfying some criterion determined by

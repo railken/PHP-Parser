@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParser\V4\Node\Stmt;
 
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Node\Stmt;
 
 class Static_ extends Stmt
 {

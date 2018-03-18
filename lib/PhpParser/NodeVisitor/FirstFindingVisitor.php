@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\NodeVisitor;
+namespace PhpParser\V4\NodeVisitor;
 
-use PhpParser\Node;
-use PhpParser\NodeTraverser;
-use PhpParser\NodeVisitorAbstract;
+use PhpParser\V4\Node;
+use PhpParser\V4\NodeTraverser;
+use PhpParser\V4\NodeVisitorAbstract;
 
 /**
  * This visitor can be used to find the first node satisfying some criterion determined by

@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Parser;
+namespace PhpParser\V4\Parser;
 
-use PhpParser\Error;
-use PhpParser\ErrorHandler;
-use PhpParser\Parser;
+use PhpParser\V4\Error;
+use PhpParser\V4\ErrorHandler;
+use PhpParser\V4\Parser;
 
 class Multiple implements Parser
 {

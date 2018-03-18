@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Scalar;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Scalar;
 use PHPUnit\Framework\TestCase;
 
 class ConstExprEvaluatorTest extends TestCase
@@ -74,7 +74,7 @@ class ConstExprEvaluatorTest extends TestCase
     }
 
     /**
-     * @expectedException \PhpParser\ConstExprEvaluationException
+     * @expectedException \PhpParser\V4\ConstExprEvaluationException
      * @expectedExceptionMessage Expression of type Expr_Variable cannot be evaluated
      */
     public function testEvaluateFails() {

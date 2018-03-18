@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
+use PhpParser\V4\BuilderHelpers;
+use PhpParser\V4\Node;
 
 abstract class FunctionLike extends Declaration
 {

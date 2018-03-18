@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser\Builder;
-use PhpParser\BuilderHelpers;
-use PhpParser\Node;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Builder;
+use PhpParser\V4\BuilderHelpers;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Stmt;
 
 class Use_ implements Builder
 {

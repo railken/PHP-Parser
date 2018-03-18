@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Expr;
+namespace PhpParser\V4\Node\Expr;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Identifier;
 
 class StaticCall extends Expr
 {

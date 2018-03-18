@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt\TraitUseAdaptation;
+namespace PhpParser\V4\Node\Stmt\TraitUseAdaptation;
 
-use PhpParser\Node;
+use PhpParser\V4\Node;
 
 class Alias extends Node\Stmt\TraitUseAdaptation
 {

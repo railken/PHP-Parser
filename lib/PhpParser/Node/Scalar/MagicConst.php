@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Scalar;
+namespace PhpParser\V4\Node\Scalar;
 
-use PhpParser\Node\Scalar;
+use PhpParser\V4\Node\Scalar;
 
 abstract class MagicConst extends Scalar
 {

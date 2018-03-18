@@ -1,11 +1,11 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser;
-use PhpParser\BuilderHelpers;
+use PhpParser\V4;
+use PhpParser\V4\BuilderHelpers;
 
-abstract class Declaration implements PhpParser\Builder
+abstract class Declaration implements \PhpParser\V4\Builder
 {
     protected $attributes = [];
 
@@ -29,7 +29,7 @@ abstract class Declaration implements PhpParser\Builder
     /**
      * Sets doc comment for the declaration.
      *
-     * @param PhpParser\Comment\Doc|string $docComment Doc comment to set
+     * @param PhpParser\V4\Comment\Doc|string $docComment Doc comment to set
      *
      * @return $this The builder instance (for fluid interface)
      */

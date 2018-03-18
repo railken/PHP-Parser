@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
 require __DIR__ . '/bootstrap.php';
 require __DIR__ . '/PhpParser/CodeTestParser.php';

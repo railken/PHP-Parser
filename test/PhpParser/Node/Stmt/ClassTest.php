@@ -1,6 +1,6 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParser\V4\Node\Stmt;
 
 use PHPUnit\Framework\TestCase;
 

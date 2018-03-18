@@ -1,9 +1,9 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Node\Stmt;
+namespace PhpParser\V4\Node\Stmt;
 
-use PhpParser\Node;
-use PhpParser\Node\Expr;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Expr;
 
 class Catch_ extends Node\Stmt
 {

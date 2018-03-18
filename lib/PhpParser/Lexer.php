@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Parser\Tokens;
+use PhpParser\V4\Parser\Tokens;
 
 class Lexer
 {
@@ -28,7 +28,7 @@ class Lexer
      *                       first three. For more info see getNextToken() docs.
      */
     public function __construct(array $options = []) {
-        // map from internal tokens to PhpParser tokens
+        // map from internal tokens to PhpParser\V4 tokens
         $this->tokenMap = $this->createTokenMap();
 
         // map of tokens to drop while lexing (the map is only used for isset lookup,
@@ -202,7 +202,7 @@ class Lexer
      * The available attributes are determined by the 'usedAttributes' option, which can
      * be specified in the constructor. The following attributes are supported:
      *
-     *  * 'comments'      => Array of PhpParser\Comment or PhpParser\Comment\Doc instances,
+     *  * 'comments'      => Array of PhpParser\V4\Comment or PhpParser\V4\Comment\Doc instances,
      *                       representing all comments that occurred between the previous
      *                       non-discarded token and the current one.
      *  * 'startLine'     => Line in which the node starts.

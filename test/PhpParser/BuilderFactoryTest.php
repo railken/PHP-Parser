@@ -1,15 +1,15 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Builder;
-use PhpParser\Node\Arg;
-use PhpParser\Node\Expr;
-use PhpParser\Node\Expr\BinaryOp\Concat;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\Scalar\LNumber;
-use PhpParser\Node\Scalar\String_;
+use PhpParser\V4\Builder;
+use PhpParser\V4\Node\Arg;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Expr\BinaryOp\Concat;
+use PhpParser\V4\Node\Identifier;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\Scalar\LNumber;
+use PhpParser\V4\Node\Scalar\String_;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\Yaml\Tests\A;
 

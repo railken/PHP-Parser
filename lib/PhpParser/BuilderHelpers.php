@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Expr;
-use PhpParser\Node\Identifier;
-use PhpParser\Node\Name;
-use PhpParser\Node\NullableType;
-use PhpParser\Node\Scalar;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Node\Expr;
+use PhpParser\V4\Node\Identifier;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\NullableType;
+use PhpParser\V4\Node\Scalar;
+use PhpParser\V4\Node\Stmt;
 
 /**
  * This class defines helpers used in the implementation of builders. Don't use it directly.
@@ -246,7 +246,7 @@ final class BuilderHelpers
     }
 
     /**
-     * Normalizes a doc comment: Converts plain strings to PhpParser\Comment\Doc.
+     * Normalizes a doc comment: Converts plain strings to PhpParser\V4\Comment\Doc.
      *
      * @param Comment\Doc|string $docComment The doc comment to normalize
      *
@@ -258,7 +258,7 @@ final class BuilderHelpers
         } elseif (is_string($docComment)) {
             return new Comment\Doc($docComment);
         } else {
-            throw new \LogicException('Doc comment must be a string or an instance of PhpParser\Comment\Doc');
+            throw new \LogicException('Doc comment must be a string or an instance of PhpParser\V4\Comment\Doc');
         }
     }
 

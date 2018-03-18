@@ -1,10 +1,10 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser;
+namespace PhpParser\V4;
 
-use PhpParser\Node\Name;
-use PhpParser\Node\Name\FullyQualified;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Node\Name;
+use PhpParser\V4\Node\Name\FullyQualified;
+use PhpParser\V4\Node\Stmt;
 
 class NameContext
 {

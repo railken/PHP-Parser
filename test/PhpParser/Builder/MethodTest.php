@@ -1,13 +1,13 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\Builder;
+namespace PhpParser\V4\Builder;
 
-use PhpParser\Comment;
-use PhpParser\Node;
-use PhpParser\Node\Expr\Print_;
-use PhpParser\Node\Expr\Variable;
-use PhpParser\Node\Scalar\String_;
-use PhpParser\Node\Stmt;
+use PhpParser\V4\Comment;
+use PhpParser\V4\Node;
+use PhpParser\V4\Node\Expr\Print_;
+use PhpParser\V4\Node\Expr\Variable;
+use PhpParser\V4\Node\Scalar\String_;
+use PhpParser\V4\Node\Stmt;
 use PHPUnit\Framework\TestCase;
 
 class MethodTest extends TestCase

@@ -1,14 +1,14 @@
 <?php declare(strict_types=1);
 
-namespace PhpParser\ErrorHandler;
+namespace PhpParser\V4\ErrorHandler;
 
-use PhpParser\Error;
+use PhpParser\V4\Error;
 use PHPUnit\Framework\TestCase;
 
 class ThrowingTest extends TestCase
 {
     /**
-     * @expectedException \PhpParser\Error
+     * @expectedException \PhpParser\V4\Error
      * @expectedExceptionMessage Test
      */
     public function testHandleError() {
